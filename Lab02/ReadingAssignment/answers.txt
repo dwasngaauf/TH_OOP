@@ -1,0 +1,13 @@
+Phần 7: 
+- When should accessor methods be used?
+-> Khi nên dùng Accessor Methods:
+    + Tương tác với Framework/Thư viện: Khi sử dụng các công cụ yêu cầu chuẩn JavaBeans (như Hibernate để làm việc với Database, hoặc Jackson để chuyển đổi JSON).
+    + Hiển thị Giao diện (UI): Khi cần lấy dữ liệu từ đối tượng để đổ lên màn hình người dùng.
+    + Lớp vận chuyển dữ liệu (DTO): Dùng cho các lớp "vỏ bọc" chỉ chứa dữ liệu để di chuyển giữa các tầng hệ thống, không chứa logic nghiệp vụ.
+    + Kiểm soát dữ liệu (Validation): Khi cần kiểm tra tính hợp lệ của giá trị (ví dụ: giá không được âm) trước khi gán vào thuộc tính.
+-> Để tránh "Evil: 
+    + Cần hạn chế tối đa trong các lớp chứa logic (Business Logic).
+    + Áp dụng nguyên tắc "Tell, Don't Ask": Ra lệnh cho đối tượng thực hiện hành động thay vì lấy dữ liệu của nó ra ngoài để tự xử lý.
+Phần 8:
+- If you create a constructor method to build a DVD by title then create a constructor method to build a DVD by category. Does JAVA allow you to do this? 
+-> Không. Vì Java phân biệt các Constructor dựa trên Signature (kiểu dữ liệu và thứ tự của các tham số). Cả title và category đều là String. Khi viết cả hai, Java sẽ thấy hai hàm cùng là DigitalVideoDisc(String). Khi gọi new DigitalVideoDisc, máy tính sẽ không biết chuỗi đó là tiêu đề hay thể loại.
