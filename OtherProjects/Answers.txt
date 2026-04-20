@@ -1,7 +1,0 @@
-
-1, What happens if users choose “Cancel”?
-- Trong code: (option == JOptionPane.YES_OPTION ? "Yes" : "No") => Nếu user bấm Cancel, vẫn bị in ra "No"
-2, How to customize the options to users, e.g. only two options: “Yes” and “No”, OR “I do” 
-and “I don’t” (Suggestion: Use Javadocs or using Eclipse/Netbean IDE help).
-- Có thể tùy chỉnh các nút trong hộp thoại bằng cách sử dụng showOptionDialog thay cho showConfirmDialog. Phương thức này cho phép thay các nút mặc định như “Yes/No” bằng các lựa chọn tùy ý thông qua một mảng options.
-Code: (Đã được up trên github file exercise61_fix)
