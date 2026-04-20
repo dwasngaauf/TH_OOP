@@ -1,0 +1,15 @@
+1.Is JAVA a Pass by Value or a Pass by Reference programming language?
+
+Trả lời: Java luôn luôn là ngôn ngữ truyền tham trị (Pass by Value). Nó truyền bản sao giá trị của biến (với đối tượng là bản sao của địa chỉ ô nhớ).
+
+2.After the call of swap(jungleDVD, cinderellaDVD) why does the title of these two objects still remain?
+
+Trả lời: Vì hàm swap chỉ tráo đổi hai "bản sao" của địa chỉ ô nhớ. Khi hàm kết thúc, các bản sao này bị hủy, còn hai biến gốc ở hàm main vẫn trỏ về địa chỉ cũ.
+
+3.After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed?
+
+Trả lời: Vì hàm này dùng bản sao địa chỉ để truy cập trực tiếp vào vùng nhớ của đối tượng và gọi lệnh setTitle(). Việc thay đổi dữ liệu trực tiếp tại ô nhớ sẽ tác động lên đối tượng gốc.
+
+4.Please write a swap() method that can correctly swap the two objects.
+
+Trả lời: Để tráo đổi đúng, ta phải tráo đổi dữ liệu bên trong (thuộc tính) của hai đối tượng thông qua các hàm getter và setter.
