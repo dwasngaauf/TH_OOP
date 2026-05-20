@@ -10,4 +10,4 @@ Phần 7:
     + Áp dụng nguyên tắc "Tell, Don't Ask": Ra lệnh cho đối tượng thực hiện hành động thay vì lấy dữ liệu của nó ra ngoài để tự xử lý.
 Phần 8:
 - If you create a constructor method to build a DVD by title then create a constructor method to build a DVD by category. Does JAVA allow you to do this? 
--> Không. Vì Java phân biệt các Constructor dựa trên Signature (kiểu dữ liệu và thứ tự của các tham số). Cả title và category đều là String. Khi viết cả hai, Java sẽ thấy hai hàm cùng là DigitalVideoDisc(String). Khi gọi new DigitalVideoDisc, máy tính sẽ không biết chuỗi đó là tiêu đề hay thể loại.
+-> Không. Vì Java phân biệt các Constructor dựa trên Signature (kiểu dữ liệu và thứ tự của các tham số). Cả title và category đều là String. Khi viết cả hai, Java sẽ thấy hai hàm cùng là hust.soict.dsai.aims.media.DigitalVideoDisc(String). Khi gọi new hust.soict.dsai.aims.media.DigitalVideoDisc, máy tính sẽ không biết chuỗi đó là tiêu đề hay thể loại.

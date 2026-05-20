@@ -1,4 +1,6 @@
-//Example 1: HelloWorld.java
+package hust.soict.dsai.lab01;
+
+//Example 1: hust.soict.dsai.lab01.HelloWorld.java
 //Text_printing program
 public class HelloWorld
 {
